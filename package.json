@@ -1,0 +1,23 @@
+{
+  "name": "xgateway",
+  "version": "0.0.1",
+  "description": "Gateway for Inform X",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xgateway"
+  ],
+  "rejectUnauthorized":false,
+  "dependencies": {
+    "child_process": "1.0.2",
+    "crypto": "0.0.3",
+    "events": "1.1.1",
+    "log4js": "1.1.0",
+    "nconf": "0.8.4",
+    "ws": "1.1.5"
+  },
+  "author": "Alexey Petrunev <alexeypetrunev@gmail.com>",
+  "license": "AGPL-3.0"
+}

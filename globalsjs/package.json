@@ -1,0 +1,54 @@
+{
+  "name": "globalsjs",
+  "description": "globals.js: Node.js-based JavaScript/JSON abstraction of Mumps database",
+  "version": "0.31.0",
+  "author": {
+    "name": "Rob Tweed",
+    "email": "rtweed@mgateway.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robtweed/ewd.js.git"
+  },
+  "os": [
+    "any"
+  ],
+  "directories": {
+    "lib": "./lib/"
+  },
+  "main": "./lib/globals.js",
+  "engines": {
+    "node": ">=0.2.2"
+  },
+  "dependencies": {},
+  "licenses": [
+    "Apache"
+  ],
+  "gitHead": "075a44cc7642a8a45c30eda6d2af127ac8750510",
+  "bugs": {
+    "url": "https://github.com/robtweed/ewd.js/issues"
+  },
+  "homepage": "https://github.com/robtweed/ewd.js#readme",
+  "_id": "globalsjs@0.31.0",
+  "scripts": {},
+  "_shasum": "c89c579bd13a792987ed718e3c64888cb6de3ab6",
+  "_from": "globalsjs@>=0.20.0",
+  "_npmVersion": "2.11.3",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "robtweed",
+    "email": "rtweed@mgateway.com"
+  },
+  "dist": {
+    "shasum": "c89c579bd13a792987ed718e3c64888cb6de3ab6",
+    "tarball": "https://registry.npmjs.org/globalsjs/-/globalsjs-0.31.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "robtweed",
+      "email": "rtweed@mgateway.com"
+    }
+  ],
+  "_resolved": "https://registry.npmjs.org/globalsjs/-/globalsjs-0.31.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

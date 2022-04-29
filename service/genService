@@ -1,0 +1,28 @@
+#!/bin/sh
+
+CUR_DIR=$(pwd)
+SERVICE=$CUR_DIR/xgateway.service
+USER=gtm_app
+GROUP=gtm
+NODE=$(which node)
+
+cat <<-SRV > $SERVICE
+[Unit]
+Description=Xgateway service by JSC Komitex
+After=gtm.service
+BindsTo=gtm.service
+
+[Service]
+Type=oneshot
+User=$USER
+Group=$GROUP
+Environment=NODE=$NODE
+RemainAfterExit=yes
+WorkingDirectory=$HOME/xgateway/ws-server
+ExecStart=
+ExecStart=$HOME/xgateway/ws-server/Server.sh start
+ExecStop=$HOME/xgateway/ws-server/Server.sh stop
+
+[Install]
+WantedBy=multi-user.target
+SRV

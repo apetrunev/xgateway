@@ -1,0 +1,14 @@
+1. Устанавливается и запускается от непревилигированного пользователя gtm_app
+2. Пользователь должен иметь файл ~/.iks_enronment содержащий перменные среды gtm
+3. Пользователя gtm_app нужно добавить в группу sudo
+4. В папке service лежит файл xgateway.service для systemd
+
+Установка:
+1. Скачиваем с svn:
+  svn co http://svn.komitex.ru/svn/xgateway
+2. cd xagateway && make install
+3. Скрипт для запуска Server.sh папке ws-server/
+
+Запуск:
+	systemctl start xgateway.service
+	systemctl stop xgateway.service

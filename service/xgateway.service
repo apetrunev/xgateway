@@ -1,0 +1,18 @@
+[Unit]
+Description=Xgateway service by JSC Komitex
+After=gtm.service
+BindsTo=gtm.service
+
+[Service]
+Type=oneshot
+User=gtm_app
+Group=gtm
+Environment=NODE=/usr/gtm/users/gtm_app/.nvm/v0.10.40/bin/node
+RemainAfterExit=yes
+WorkingDirectory=/usr/gtm/users/gtm_app/xgateway/ws-server
+ExecStart=
+ExecStart=/usr/gtm/users/gtm_app/xgateway/ws-server/Server.sh start
+ExecStop=/usr/gtm/users/gtm_app/xgateway/ws-server/Server.sh stop
+
+[Install]
+WantedBy=multi-user.target
